@@ -1,7 +1,7 @@
 # DataAnaylistTool
 
 
-## User will Input Data and This program can aggregate the data or sort the data or pivot the data or can also plot data for Visulisation. We will use Pandas, Numpy and Matplotlib for all programming this software.
+### User will Input Data and This program can aggregate the data or sort the data or pivot the data or can also plot data for Visulisation. We will use Pandas, Numpy and Matplotlib for all programming this software.
 
 
 ## Functions to Code : 
