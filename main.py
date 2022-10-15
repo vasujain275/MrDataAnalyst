@@ -1,5 +1,4 @@
 import pandas as pd
-import plots
 print("-------------------------------")
 print("Welcome to Data Anaylist Tool")
 print("-------------------------------")
@@ -12,7 +11,6 @@ keys = []
 for i in range(0,coln):
     temp = input(f"Enter Column {i+1} Name: ")
     keys.append(temp)
-
 print(f"So your Columns are {keys}")
 rown = int(input("Please Enter the Number of Rows you want:"))
 for i in keys:
@@ -39,4 +37,10 @@ else:
 print("-------------------------------")
 print(f'Here is your Data Frame\n{df}')
 print("-------------------------------")
-print(plots.SingelLine(df))
+
+print("What you want to do with your Data?")
+print('''
+1. Visualize
+2. Aggregate
+3. Sort
+''')
