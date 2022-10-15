@@ -44,3 +44,29 @@ print('''
 2. Aggregate
 3. Sort
 ''')
+datan = int(input("> "))
+
+if datan==1:
+    print("Which type of Data Visualization you want?")
+    print('''
+    1. Single Line Plot
+    2. Multiple Line Plot
+    3. Multiple View Line Plot
+    4. Bar Plot
+    5. Histogram
+    ''')
+    visn = int(input("> "))
+elif datan==2:
+    print("Which type of Data Aggregation you want?")
+    print('''
+    1. Maximum Value
+    2. Minimum Value
+    3. Sum of Values
+    4. Count of Values
+    5. Mean of Values
+    6. Median of Values
+    7. Mode of Values
+    8. Quantile of Values
+    9. Grouping & Transforming Data
+    ''')
+    aggrn = int(input("> "))
