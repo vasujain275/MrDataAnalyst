@@ -1,4 +1,5 @@
 import pandas as pd
+import aggr
 print("-------------------------------")
 print("Welcome to Data Anaylist Tool")
 print("-------------------------------")
@@ -68,6 +69,10 @@ while opn=='y':
         7. Mode of Values
         ''')
         aggrn = int(input("> "))
+        if aggrn==1:
+            print(aggr.amax(df))
+        
+
     opn = input("Do you want to continue(y/n): ")
 
 print("\nThank you for using Data Anaylist Tool\n")

@@ -14,17 +14,35 @@ def amax(df):
         numo=False
 
     if coln==1:
-        print(df.max())
+        print(df.max(numeric_only=numn))
     elif coln==2:
-        print(df.max(axis=1))
+        print(df.max(axis=1,numeric_only=numn))
     elif coln==3:
         col = input("Enter the Exact Name of Column you want to use: ")
-        print(df[col].max)
+        print(df[col].max(numeric_only=numn))
     else:
         print("Choose between 1/2/3")
 
-d = {"Name":['Vasu','Jatin'],
-     'Marks':[100,90]
-    }
-df = pd.DataFrame(d)
-print(amax(df))
+def amin(df):
+    pass
+
+def asum(df):
+    pass
+
+def acount(df):
+    pass
+
+def amode(df):
+    pass
+
+def amean(df):
+    pass
+
+def amedian(df):
+    pass
+
+# d = {"Name":['Vasu','Jatin'],
+#      'Marks':[100,90]
+#     }
+# df = pd.DataFrame(d)
+# print(amax(df))
