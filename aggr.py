@@ -1,7 +1,8 @@
+from traceback import print_tb
 from unicodedata import numeric
 import pandas as pd
 def amax(df):
-    print("Which type of maximum value you want?(1/2/3)")
+    print("On which you want to use maximum function?(1/2/3)")
     print('''
     1. Maximum value of all columns in Dataframe
     2. Maximum value of all rows in Dataframe
@@ -25,7 +26,7 @@ def amax(df):
         print("Choose between 1/2/3")
 
 def amin(df):
-    print("Which type of minimum values you wanr?(1/2/3)")
+    print("On which you want to use minimum function?(1/2/3)")
     print('''
     1. Minimum values of all columns in Dataframe
     2. Minimum values of all rows in Dataframe
@@ -45,12 +46,56 @@ def amin(df):
     elif coln==3:
         coln = input("Enter the Exact Name of Column you want to use: ")
         print(df[coln].min(numeric_only=numn))
+    else:
+        print("Choose Between 1/2/3")
 
 def asum(df):
-    pass
+    print("On which you want to use sum function?(1/2/3)")
+    print('''
+    1. Sum of all columns in Dataframe
+    2. Sum of all rows in Dataframe
+    3. Sum of specified column in Dataframe
+    ''')
+    coln = int(input("> "))
+    numn = input("Do you want only numeric values?(y/n): ")
+    if numn=='y':
+        numo = True
+    elif numn=='n':
+        numo = False
+    
+    if coln==1:
+        print(df.sum(axis=0,numeric_only=numn))
+    elif coln==2:
+        print(df.sum(axis=1,numeric_only=numn))
+    elif coln==3:
+        coln = input("Enter the Exact Name of Column you want to use: ")
+        print(df[coln].sum(numeric_only=numn))
+    else:
+        print("Choose Between 1/2/3")
 
 def acount(df):
-    pass
+    print("On which you want to use count function?(1/2/3)")
+    print('''
+    1. Count of all columns in Dataframe
+    2. Count of all rows in Dataframe
+    3. Count of specified column in Dataframe
+    ''')
+    coln = int(input("> "))
+    numn = input("Do you want only numeric values?(y/n): ")
+    if numn=='y':
+        numo = True
+    elif numn=='n':
+        numo = False
+    
+    if coln==1:
+        print(df.count(axis=0,numeric_only=numn))
+    elif coln==2:
+        print(df.count(axis=1,numeric_only=numn))
+    elif coln==3:
+        coln = input("Enter the Exact Name of Column you want to use: ")
+        print(df[coln].count(numeric_only=numn))
+    else:
+        print("Choose Between 1/2/3")
 
 def amode(df):
     pass
@@ -61,8 +106,8 @@ def amean(df):
 def amedian(df):
     pass
 
-# d = {"Name":['Vasu','Jatin'],
-#      'Marks':[100,90]
-#     }
-# df = pd.DataFrame(d)
-# print(amax(df))
+d = {"Name":['Vasu','Jatin'],
+     'Marks':[100,90]
+    }
+df = pd.DataFrame(d)
+print(amin(df))
