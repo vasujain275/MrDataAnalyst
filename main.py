@@ -71,6 +71,8 @@ while opn=='y':
         aggrn = int(input("> "))
         if aggrn==1:
             print(aggr.amax(df))
+        elif aggrn==2:
+            print(aggr.amin(df))
         
 
     opn = input("Do you want to continue(y/n): ")
