@@ -43,7 +43,6 @@ while opn=='y':
     print('''
     1. Visualize
     2. Aggregate
-    3. Sort
     ''')
     datan = int(input("> "))
 
@@ -67,12 +66,8 @@ while opn=='y':
         5. Mean of Values
         6. Median of Values
         7. Mode of Values
-        8. Quantile of Values
-        9. Grouping & Transforming Data
         ''')
         aggrn = int(input("> "))
-    elif datan==3:
-        print("Here is your Sorted Data")
     opn = input("Do you want to continue(y/n): ")
 
 print("\nThank you for using Data Anaylist Tool\n")
