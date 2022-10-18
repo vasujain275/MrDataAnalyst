@@ -106,17 +106,17 @@ def amode(df):
 
     if coln==1:
         numn = input("Do you want only numeric values?(y/n): ")
-    if numn=='y':
-        numo = True
-    elif numn=='n':
-        numo = False
+        if numn=='y':
+            numo = True
+        elif numn=='n':
+            numo = False
         print(df.mode(axis=0,numeric_only=numn))
     elif coln==2:
         numn = input("Do you want only numeric values?(y/n): ")
-    if numn=='y':
-        numo = True
-    elif numn=='n':
-        numo = False
+        if numn=='y':
+            numo = True
+        elif numn=='n':
+            numo = False
         print(df.mode(axis=1,numeric_only=numn))
     elif coln==3:
         coln = input("Enter the Exact Name of Column you want to use: ")
@@ -135,17 +135,17 @@ def amean(df):
 
     if coln==1:
         numn = input("Do you want only numeric values?(y/n): ")
-    if numn=='y':
-        numo = True
-    elif numn=='n':
-        numo = False
+        if numn=='y':
+            numo = True
+        elif numn=='n':
+            numo = False
         print(df.mean(axis=0,numeric_only=numn))
     elif coln==2:
         numn = input("Do you want only numeric values?(y/n): ")
-    if numn=='y':
-        numo = True
-    elif numn=='n':
-        numo = False
+        if numn=='y':
+            numo = True
+        elif numn=='n':
+            numo = False
         print(df.mean(axis=1,numeric_only=numn))
     elif coln==3:
         coln = input("Enter the Exact Name of Column you want to use: ")
@@ -164,18 +164,18 @@ def amedian(df):
     
     if coln==1:
         numn = input("Do you want only numeric values?(y/n): ")
-    if numn=='y':
-        numo = True
-    elif numn=='n':
-        numo = False
-        print(df.median(axis=0,numeric_only=numn))
+        if numn=='y':
+            numo = True
+        elif numn=='n':
+            numo = False
+            print(df.median(axis=0,numeric_only=numn))
     elif coln==2:
         numn = input("Do you want only numeric values?(y/n): ")
-    if numn=='y':
-        numo = True
-    elif numn=='n':
-        numo = False
-        print(df.median(axis=1,numeric_only=numn))
+        if numn=='y':
+            numo = True
+        elif numn=='n':
+            numo = False
+            print(df.median(axis=1,numeric_only=numn))
     elif coln==3:
         coln = input("Enter the Exact Name of Column you want to use: ")
         print(df[coln].median())
@@ -186,5 +186,4 @@ d = {"Name":['Vasu','Jatin'],
      'Marks':[100,90]
     }
 df = pd.DataFrame(d)
-# print(amedian(df))
-print(df)
+print(acount(df))
