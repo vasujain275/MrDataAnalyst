@@ -98,16 +98,95 @@ def acount(df):
         print("Choose Between 1/2/3")
 
 def amode(df):
-    pass
+    print("On which you want to use mode function?(1/2/3)")
+    print('''
+    1. Mode of all columns in Dataframe
+    2. Mode of all rows in Dataframe
+    3. Mode of specified column in Dataframe
+    ''')
+    coln = int(input("> "))
+
+    if coln==1:
+        numn = input("Do you want only numeric values?(y/n): ")
+    if numn=='y':
+        numo = True
+    elif numn=='n':
+        numo = False
+        print(df.mode(axis=0,numeric_only=numn))
+    elif coln==2:
+        numn = input("Do you want only numeric values?(y/n): ")
+    if numn=='y':
+        numo = True
+    elif numn=='n':
+        numo = False
+        print(df.mode(axis=1,numeric_only=numn))
+    elif coln==3:
+        coln = input("Enter the Exact Name of Column you want to use: ")
+        print(df[coln].mode())
+    else:
+        print("Choose Between 1/2/3")
 
 def amean(df):
-    pass
+    print("On which you want to use mean function?(1/2/3)")
+    print('''
+    1. Mean of all columns in Dataframe
+    2. Mean of all rows in Dataframe
+    3. Mean of specified column in Dataframe
+    ''')
+    coln = int(input("> "))
+
+    if coln==1:
+        numn = input("Do you want only numeric values?(y/n): ")
+    if numn=='y':
+        numo = True
+    elif numn=='n':
+        numo = False
+        print(df.mean(axis=0,numeric_only=numn))
+    elif coln==2:
+        numn = input("Do you want only numeric values?(y/n): ")
+    if numn=='y':
+        numo = True
+    elif numn=='n':
+        numo = False
+        print(df.mean(axis=1,numeric_only=numn))
+    elif coln==3:
+        coln = input("Enter the Exact Name of Column you want to use: ")
+        print(df[coln].mean())
+    else:
+        print("Choose Between 1/2/3")
 
 def amedian(df):
-    pass
+    print("On which you want to use median function?(1/2/3)")
+    print('''
+    1. Median of all columns in Dataframe
+    2. Median of all rows in Dataframe
+    3. Median of specified column in Dataframe
+    ''')
+    coln = int(input("> "))
+    
+    if coln==1:
+        numn = input("Do you want only numeric values?(y/n): ")
+    if numn=='y':
+        numo = True
+    elif numn=='n':
+        numo = False
+        print(df.median(axis=0,numeric_only=numn))
+    elif coln==2:
+        numn = input("Do you want only numeric values?(y/n): ")
+    if numn=='y':
+        numo = True
+    elif numn=='n':
+        numo = False
+        print(df.median(axis=1,numeric_only=numn))
+    elif coln==3:
+        coln = input("Enter the Exact Name of Column you want to use: ")
+        print(df[coln].median())
+    else:
+        print("Choose Between 1/2/3")
 
-d = {"Name":['Vasu','Jatin'],
-     'Marks':[100,90]
-    }
-df = pd.DataFrame(d)
-print(amin(df))
+# d = {"Name":['Vasu','Jatin'],
+#      'Marks':[100,90]
+#     }
+# df = pd.DataFrame(d)
+# # print(amedian(df))
+# print(df)

@@ -73,6 +73,18 @@ while opn=='y':
             print(aggr.amax(df))
         elif aggrn==2:
             print(aggr.amin(df))
+        elif aggrn==3:
+            print(aggr.asum(df))
+        elif aggrn==4:
+            print(aggr.acount(df))
+        elif aggrn==5:
+            print(aggr.amean(df))
+        elif aggrn==6:
+            print(aggr.amedian(df))
+        elif aggrn==7:
+            print(aggr.amode(df))
+        else:
+            print('Please choice the correct number')
         
 
     opn = input("Do you want to continue(y/n): ")
