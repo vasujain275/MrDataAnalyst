@@ -1,5 +1,6 @@
 import pandas as pd
 import aggr
+import plots
 import time
 print("-------------------------------")
 print("Welcome to Data Anaylist Tool")
@@ -58,6 +59,10 @@ while opn=='y':
         5. Histogram
         ''')
         visn = int(input("> "))
+
+        if visn==1:
+            print(plots.SingelLine(df))
+
     elif datan==2:
         print("Which type of Data Aggregation you want?")
         print('''
