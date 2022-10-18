@@ -79,19 +79,25 @@ def acount(df):
     3. Count of specified column in Dataframe
     ''')
     coln = int(input("> "))
-    numn = input("Do you want only numeric values?(y/n): ")
-    if numn=='y':
-        numo = True
-    elif numn=='n':
-        numo = False
+    
     
     if coln==1:
+        numn = input("Do you want only numeric values?(y/n): ")
+        if numn=='y':
+            numo = True
+        elif numn=='n':
+            numo = False
         print(df.count(axis=0,numeric_only=numn))
     elif coln==2:
+        numn = input("Do you want only numeric values?(y/n): ")
+        if numn=='y':
+            numo = True
+        elif numn=='n':
+            numo = False
         print(df.count(axis=1,numeric_only=numn))
     elif coln==3:
         coln = input("Enter the Exact Name of Column you want to use: ")
-        print(df[coln].count(numeric_only=numn))
+        print(df[coln].count())
     else:
         print("Choose Between 1/2/3")
 
@@ -181,9 +187,3 @@ def amedian(df):
         print(df[coln].median())
     else:
         print("Choose Between 1/2/3")
-
-d = {"Name":['Vasu','Jatin'],
-     'Marks':[100,90]
-    }
-df = pd.DataFrame(d)
-print(acount(df))
