@@ -1,5 +1,3 @@
-from traceback import print_tb
-from unicodedata import numeric
 import pandas as pd
 def amax(df):
     print("On which you want to use maximum function?(1/2/3)")
@@ -184,9 +182,9 @@ def amedian(df):
     else:
         print("Choose Between 1/2/3")
 
-# d = {"Name":['Vasu','Jatin'],
-#      'Marks':[100,90]
-#     }
-# df = pd.DataFrame(d)
-# # print(amedian(df))
-# print(df)
+d = {"Name":['Vasu','Jatin'],
+     'Marks':[100,90]
+    }
+df = pd.DataFrame(d)
+# print(amedian(df))
+print(df)
