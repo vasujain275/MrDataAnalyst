@@ -1,5 +1,6 @@
 import pandas as pd
 import aggr
+import time
 print("-------------------------------")
 print("Welcome to Data Anaylist Tool")
 print("-------------------------------")
@@ -91,3 +92,4 @@ while opn=='y':
 
 print("\nThank you for using Data Anaylist Tool\n")
 print("Made by - \nJatin Gupta (XII D)\nVasu Jain (XII B)")
+time.sleep(15) 
