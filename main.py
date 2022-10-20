@@ -2,44 +2,10 @@ import pandas as pd
 import aggr
 import plots
 import time
-print("-------------------------------")
-print("Welcome to Data Anaylist Tool")
-print("-------------------------------")
-print("This tool can help you sort,organize,aggregate and visualize your Data")
-print("We uses Data Frames to Work on Data")
-print("-------------------------------")
-coln = int(input("Please Enter the Number of Columns you want:"))
-d = {}
-keys = []
-for i in range(0,coln):
-    temp = input(f"Enter Column {i+1} Name: ")
-    keys.append(temp)
-print(f"So your Columns are {keys}")
-rown = int(input("Please Enter the Number of Rows you want:"))
-for i in keys:
-    print(f"Enter Values for {i} :")
-    tempval = []
-    valn = input("Are Values Numeric?(y/n): ")
-    for j in range(0,rown):
-        if valn=='y':
-            temp = int(input(f"Enter Value {j+1}: "))
-            tempval.append(temp)
-        else:
-            temp = input(f"Enter Value {j+1}: ")
-            tempval.append(temp)
-    d[i] = tempval
-iyn = input("Do you want to use Custom Index?(y/n)")
-if iyn=='y':
-    indexn = []
-    for i in range(0,rown):
-        temp1 = int(input("Enter Index Values:"))
-        indexn.append(temp1)
-    df = pd.DataFrame(d,index=indexn)
-else:
-    df = pd.DataFrame(d)
-print("-------------------------------")
-print(f'Here is your Data Frame\n{df}')
-print("-------------------------------")
+import base
+
+base.Welcome()
+df = base.DataCreate()
 opn ="y"
 while opn=='y':
     print("What you want to do with your Data?")
@@ -61,8 +27,10 @@ while opn=='y':
         visn = int(input("> "))
 
         if visn==1:
-            print(plots.SingelLine(df))
-
+            plots.SingelLine(df)
+        elif visn==2:
+            plots.MultiLine(df)
+        
     elif datan==2:
         print("Which type of Data Aggregation you want?")
         print('''
@@ -94,7 +62,3 @@ while opn=='y':
         
 
     opn = input("Do you want to continue(y/n): ")
-
-print("\nThank you for using Data Anaylist Tool\n")
-print("Made by - \nJatin Gupta (XII D)\nVasu Jain (XII B)")
-time.sleep(15) 

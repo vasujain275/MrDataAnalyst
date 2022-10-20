@@ -7,19 +7,13 @@ def amax(df):
     3. Maximum value of specifed column in Dataframe
     ''')
     coln = int(input("> "))
-    numn = input("Do you want only numeric values?(y/n): ")
-    if numn=='y':
-        numo = True
-    elif numn=='n':
-        numo = False
-
     if coln==1:
-        print(df.max(axis=0,numeric_only=numn))
+        print(df.max(axis=0))
     elif coln==2:
-        print(df.max(axis=1,numeric_only=numn))
+        print(df.max(axis=1))
     elif coln==3:
         col = input("Enter the Exact Name of Column you want to use: ")
-        print(df[col].max(numeric_only=numn))
+        print(df[col].max())
     else:
         print("Choose between 1/2/3")
 
@@ -31,19 +25,13 @@ def amin(df):
     3. Minimum values of specified column in Dataframe
     ''')
     coln = int(input("> "))
-    numn = input("Do you want only numeric values?(y/n): ")
-    if numn=='y':
-        numo = True
-    elif numn=='n':
-        numo = False
-
     if coln==1:
-        print(df.min(axis=0,numeric_only=numn))
+        print(df.min(axis=0))
     elif coln==2:
-        print(df.min(axis=1,numeric_only=numn))
+        print(df.min(axis=1))
     elif coln==3:
         coln = input("Enter the Exact Name of Column you want to use: ")
-        print(df[coln].min(numeric_only=numn))
+        print(df[coln].min())
     else:
         print("Choose Between 1/2/3")
 
