@@ -3,7 +3,7 @@ import time
 
 def Welcome():
     print("-------------------------------")
-    print("Hi there, I am Mr. Data Anaylist")
+    print("Hi there, I am Mr. Data Analyst")
     print("-------------------------------")
     print("I can help you sort,organize,aggregate and visualize your Data")
     print("I uses Data Frames to Work on Data")
