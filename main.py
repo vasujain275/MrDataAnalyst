@@ -1,7 +1,5 @@
-import pandas as pd
 import aggr
 import plots
-import time
 import base
 
 base.Welcome()
@@ -14,7 +12,6 @@ while opn=='y':
     2. Aggregate
     ''')
     datan = int(input("> "))
-
     if datan==1:
         print("Which type of Data Visualization you want?")
         print('''
@@ -23,6 +20,7 @@ while opn=='y':
         3. Multiple View Line Plot
         4. Bar Plot
         5. Histogram
+        6. Back to Previous Menu / Exit
         ''')
         visn = int(input("> "))
 
@@ -30,7 +28,15 @@ while opn=='y':
             plots.SingelLine(df)
         elif visn==2:
             plots.MultiLine(df)
-        
+        elif visn==3:
+            pass
+        elif visn==4:
+            pass
+        elif visn==5:
+            pass
+        elif visn==6:
+            pass
+
     elif datan==2:
         print("Which type of Data Aggregation you want?")
         print('''
@@ -41,6 +47,7 @@ while opn=='y':
         5. Mean of Values
         6. Median of Values
         7. Mode of Values
+        8. Back to Previous Menu / Exit
         ''')
         aggrn = int(input("> "))
         if aggrn==1:
@@ -57,8 +64,8 @@ while opn=='y':
             print(aggr.amedian(df))
         elif aggrn==7:
             print(aggr.amode(df))
+        elif aggrn==8:
+            pass
         else:
             print('Please choice the correct number')
-        
-
     opn = input("Do you want to continue(y/n): ")
