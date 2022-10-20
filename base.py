@@ -3,10 +3,10 @@ import time
 
 def Welcome():
     print("-------------------------------")
-    print("Welcome to Data Anaylist Tool")
+    print("Hi there, I am Mr. Data Anaylist")
     print("-------------------------------")
-    print("This tool can help you sort,organize,aggregate and visualize your Data")
-    print("We uses Data Frames to Work on Data")
+    print("I can help you sort,organize,aggregate and visualize your Data")
+    print("I uses Data Frames to Work on Data")
     print("-------------------------------")
 
 def DataCreate():
