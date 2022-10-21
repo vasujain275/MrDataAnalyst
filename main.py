@@ -1,9 +1,14 @@
+import pandas as pd
 import aggr
 import plots
 import base
 
 base.Welcome()
-df = base.DataCreate()
+d = base.DataCreate()
+
+d.to_csv('data.csv')
+df = pd.read_csv('data.csv')
+
 opn ="y"
 while opn=='y':
     print("What you want to do with your Data?")
