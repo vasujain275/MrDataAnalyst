@@ -44,6 +44,16 @@ def DataCreate():
     print("-------------------------------")
     return df
 
+def CSV(d):
+    csv = (input("Do you want to read/write your Data from CSV?(y/n)"))
+    if csv=='y':
+        d.to_csv('data.csv')
+        df=pd.read_csv('data.csv')
+        print(df)
+    elif csv=='n':
+        df=d
+    return df
+
 def EndCredits():
     print("\nThank you for using Data Anaylist Tool\n")
     print("Made by - \nJatin Gupta (XII D)\nVasu Jain (XII B)")

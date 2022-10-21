@@ -6,8 +6,7 @@ import base
 base.Welcome()
 d = base.DataCreate()
 
-d.to_csv('data.csv')
-df = pd.read_csv('data.csv')
+df = base.CSV(d)
 
 opn ="y"
 while opn=='y':
