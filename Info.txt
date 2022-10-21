@@ -10,6 +10,6 @@ Functions to Code :
 1. Core Strucure - Done
 2. Command line UI - Done
 3. User Input Implementation - Done
-4. Data Aggregation - Pending
+4. Data Aggregation - Done
 5. Data Visulisation - Pending
 6. Finalization - Pending
