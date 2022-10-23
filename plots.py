@@ -1,3 +1,5 @@
+from turtle import color
+from unicodedata import name
 import pandas as pd
 import matplotlib.pyplot as plt
 
@@ -31,6 +33,35 @@ def MultiLine(df):
     plt.title(input("Enter the title of the graph: "))
     plt.show()
 
+def Bar(df):
+    print("Which type of bar you want? ")
+    print('''
+    1. Vertical
+    2. Horizontal
+    ''')
+    datan = int(input("> "))
+    if datan==1:
+        namex = input("What do you want on X-axis: ")
+        x = df[namex]
+        namey = input("What do you want on Y-axis: " )
+        y = df[namey]
+        plt.bar(x, y, width=0.4, color='r')
+        plt.xlabel(input("Enter X-label: "))
+        plt.ylabel(input("Enter Y-label: "))
+        plt.title(input("Enter the title of the graph: "))
+        plt.show()
+    elif datan==2:
+        namex = input("What do you want on X-axis: ")
+        x = df[namex]
+        namey = input("What do you want on Y-axis: ")
+        y = df[namey]
+        plt.barh(x, y, align='center', color='r')
+        plt.xlabel(input("Enter X-label: "))
+        plt.ylabel(input("Enter Y-label: "))
+        plt.title(input("Enter the title of the graph: "))
+        plt.show()
+    else:
+        print('Please choice the correct number')
 
 
 
@@ -41,5 +72,4 @@ def MultiLine(df):
 #      'Chemistry':[90,99,89,69]
 #     }
 # df = pd.DataFrame(d)
-# MultiLine(df)
-
+# Barplot(df)

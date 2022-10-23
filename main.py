@@ -35,7 +35,7 @@ while opn=='y':
         elif visn==3:
             pass
         elif visn==4:
-            pass
+            plots.Bar(df)
         elif visn==5:
             pass
         elif visn==6:
