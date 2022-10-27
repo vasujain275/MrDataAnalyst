@@ -6,10 +6,10 @@
 
 ## Functions to Code : 
 1. Core Strucure - Done
-2. Command line UI - Pending
-3. User Input Implementation - Pending
-4. Data Pivoting - Pending
-5. Data Aggregation - Pending
-6. Data Sorting - Pending
-7. Data Visulisation - Pending
+2. Command line UI - Done
+3. User Input Implementation - Done
+4. Data Pivoting - Done
+5. Data Aggregation - Done
+6. Data Sorting - Done
+7. Data Visulisation - Done
 8. Finalization - Pending
