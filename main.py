@@ -5,7 +5,6 @@ import base
 
 base.Welcome()
 d = base.DataCreate()
-
 df = base.CSV(d)
 
 opn ="y"
@@ -37,7 +36,7 @@ while opn=='y':
         elif visn==4:
             plots.Bar(df)
         elif visn==5:
-            pass
+            plots.Hist(df)
         elif visn==6:
             pass
 
@@ -73,3 +72,5 @@ while opn=='y':
         else:
             print('Please choice the correct number')
     opn = input("Do you want to continue(y/n): ")
+
+base.EndCredits()

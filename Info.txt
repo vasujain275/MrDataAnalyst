@@ -11,5 +11,5 @@ Functions to Code :
 2. Command line UI - Done
 3. User Input Implementation - Done
 4. Data Aggregation - Done
-5. Data Visulisation - Pending
+5. Data Visulisation - Done
 6. Finalization - Pending

@@ -63,8 +63,14 @@ def Bar(df):
     else:
         print('Please choice the correct number')
 
-
-
+def Hist(df):
+    oh = input("Do you want custom number of bins(y/n): ")
+    if oh=='y':
+        cus = int(input("Enter the number of bins you want: "))
+        df.hist(grid=False,bins=cus)
+    elif oh=='n':
+        df.hist(grid=False)
+    plt.show()
 
 # d = {"Name":['Vasu','Jatin','Rachit','Daksh'],
 #      'IP':[100,90,45,50],
@@ -72,4 +78,4 @@ def Bar(df):
 #      'Chemistry':[90,99,89,69]
 #     }
 # df = pd.DataFrame(d)
-# Barplot(df)
+# Hist(df)
