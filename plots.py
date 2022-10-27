@@ -1,5 +1,3 @@
-from turtle import color
-from unicodedata import name
 import pandas as pd
 import matplotlib.pyplot as plt
 
@@ -68,9 +66,13 @@ def Hist(df):
     if oh=='y':
         cus = int(input("Enter the number of bins you want: "))
         df.hist(grid=False,bins=cus)
+        plt.show()
     elif oh=='n':
         df.hist(grid=False)
-    plt.show()
+        plt.show()
+    else:
+        print('Please choice the correct option')
+    
 
 # d = {"Name":['Vasu','Jatin','Rachit','Daksh'],
 #      'IP':[100,90,45,50],

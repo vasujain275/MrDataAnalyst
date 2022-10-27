@@ -52,6 +52,8 @@ def CSV(d):
         print(df)
     elif csv=='n':
         df=d
+    else:
+        print('Please choice the correct option')
     return df
 
 def EndCredits():

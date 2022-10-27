@@ -39,6 +39,8 @@ while opn=='y':
             plots.Hist(df)
         elif visn==6:
             pass
+        else:
+            print('Please choice the correct number')
 
     elif datan==2:
         print("Which type of Data Aggregation you want?")
@@ -71,6 +73,14 @@ while opn=='y':
             pass
         else:
             print('Please choice the correct number')
+    else:
+        print('Please choice the correct number')
+
     opn = input("Do you want to continue(y/n): ")
+    if opn!='y' or opn!='n':
+        print("Choose b/w (y/n):")
+        opn = input("Do you want to continue(y/n): ")
+    else:
+        pass
 
 base.EndCredits()

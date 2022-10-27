@@ -13,3 +13,8 @@ Functions to Code :
 4. Data Aggregation - Done
 5. Data Visulisation - Done
 6. Finalization - Pending
+
+Bugs - 
+- Multiple Line Plot Names Not Showing
+- Multiple View Plot Not Done
+

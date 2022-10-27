@@ -10,7 +10,7 @@ def amax(df):
     if coln==1:
         print(df.max(axis=0))
     elif coln==2:
-        print(df.max(axis=1))
+        print(df.max())
     elif coln==3:
         col = input("Enter the Exact Name of Column you want to use: ")
         print(df[col].max())
@@ -48,7 +48,8 @@ def asum(df):
         numo = True
     elif numn=='n':
         numo = False
-    
+    else:
+        print('Please choice the correct option')
     if coln==1:
         print(df.sum(axis=0,numeric_only=numn))
     elif coln==2:
@@ -75,6 +76,8 @@ def acount(df):
             numo = True
         elif numn=='n':
             numo = False
+        else:
+            print('Please choice the correct option')
         print(df.count(axis=0,numeric_only=numn))
     elif coln==2:
         numn = input("Do you want only numeric values?(y/n): ")
@@ -82,6 +85,8 @@ def acount(df):
             numo = True
         elif numn=='n':
             numo = False
+        else:
+            print('Please choice the correct option')
         print(df.count(axis=1,numeric_only=numn))
     elif coln==3:
         coln = input("Enter the Exact Name of Column you want to use: ")
@@ -104,6 +109,8 @@ def amode(df):
             numo = True
         elif numn=='n':
             numo = False
+        else:
+            print('Please choice the correct option')
         print(df.mode(axis=0,numeric_only=numn))
     elif coln==2:
         numn = input("Do you want only numeric values?(y/n): ")
@@ -111,6 +118,8 @@ def amode(df):
             numo = True
         elif numn=='n':
             numo = False
+        else:
+            print('Please choice the correct option')
         print(df.mode(axis=1,numeric_only=numn))
     elif coln==3:
         coln = input("Enter the Exact Name of Column you want to use: ")
@@ -133,6 +142,8 @@ def amean(df):
             numo = True
         elif numn=='n':
             numo = False
+        else:
+            print('Please choice the correct option')
         print(df.mean(axis=0,numeric_only=numn))
     elif coln==2:
         numn = input("Do you want only numeric values?(y/n): ")
@@ -140,6 +151,8 @@ def amean(df):
             numo = True
         elif numn=='n':
             numo = False
+        else:
+            print('Please choice the correct option')
         print(df.mean(axis=1,numeric_only=numn))
     elif coln==3:
         coln = input("Enter the Exact Name of Column you want to use: ")
@@ -162,14 +175,18 @@ def amedian(df):
             numo = True
         elif numn=='n':
             numo = False
-            print(df.median(axis=0,numeric_only=numn))
+        else:
+            print('Please choice the correct option')
+        print(df.median(axis=0,numeric_only=numn))
     elif coln==2:
         numn = input("Do you want only numeric values?(y/n): ")
         if numn=='y':
             numo = True
         elif numn=='n':
             numo = False
-            print(df.median(axis=1,numeric_only=numn))
+        else:
+            print('Please choice the correct option')
+        print(df.median(axis=1,numeric_only=numn))
     elif coln==3:
         coln = input("Enter the Exact Name of Column you want to use: ")
         print(df[coln].median())
