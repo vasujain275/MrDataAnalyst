@@ -4,8 +4,14 @@ import plots
 import base
 
 base.Welcome()
-d = base.DataCreate()
-df = base.CSV(d)
+cny = int(input("Do you want to(1/2):\n 1.Enter the Data\n 2.Read Data from CSV\n> "))
+
+if cny==1:
+    d = base.DataCreate()
+    df = base.CSV(d)
+elif cny==2:
+    ncsv = input("Enter the Name of CSV File(eg - data.csv): ")
+    df = pd.read_csv(ncsv)
 
 opn ="y"
 while opn=='y':
@@ -77,7 +83,7 @@ while opn=='y':
         print('Please choice the correct number')
 
     opn = input("Do you want to continue(y/n): ")
-    if opn!='y' or opn!='n':
+    if opn!='y' and opn!='n':
         print("Choose b/w (y/n):")
         opn = input("Do you want to continue(y/n): ")
     else:

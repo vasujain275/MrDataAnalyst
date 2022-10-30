@@ -88,7 +88,7 @@ def MultiView(df):
         plt.plot(x,y,color='Red')
         plt.xlabel(xl)
         plt.ylabel(input("Enter Y-label: "))
-        plt.title(input("Enter the title of the graph: "))
+        plt.title(input("Enter the title of the Sub Plot: "))
         plt.subplots_adjust(hspace=0.8,wspace=0.8)
         c += 1
 

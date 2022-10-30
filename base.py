@@ -45,7 +45,7 @@ def DataCreate():
     return df
 
 def CSV(d):
-    csv = (input("Do you want to read/write your Data from CSV?(y/n)"))
+    csv = (input("Do you want to write your Data from CSV?(y/n)"))
     if csv=='y':
         d.to_csv('data.csv')
         df=pd.read_csv('data.csv')
