@@ -72,12 +72,33 @@ def Hist(df):
         plt.show()
     else:
         print('Please choice the correct option')
-    
+
+def MultiView(df):
+    print("Enter the Number of Rows/Columns you want in Multiple View")
+    rn = int(input("Rows: "))
+    cn = int(input("Columns: "))
+    namex = input("What do you want on X-axis: ")
+    x = df[namex]
+    xl = input("Enter X-label: ")
+    c = 1
+    for i in range(0,rn*cn):
+        plt.subplot(rn,cn,i+1)
+        namey = input(f"What do you want on your Y-axis {c} : ")
+        y = df[namey]
+        plt.plot(x,y,color='Red')
+        plt.xlabel(xl)
+        plt.ylabel(input("Enter Y-label: "))
+        plt.title(input("Enter the title of the graph: "))
+        plt.subplots_adjust(hspace=0.8,wspace=0.8)
+        c += 1
+
+    plt.show()
 
 # d = {"Name":['Vasu','Jatin','Rachit','Daksh'],
 #      'IP':[100,90,45,50],
 #      'Maths':[84,85,80,34],
-#      'Chemistry':[90,99,89,69]
+#      'Chemistry':[90,99,89,69],
+#      'Phy':[99,97,87,78]
 #     }
 # df = pd.DataFrame(d)
-# Hist(df)
+# MultiView(df)
