@@ -12,7 +12,4 @@ Functions to Code :
 3. User Input Implementation - Done
 4. Data Aggregation - Done
 5. Data Visulisation - Done
-6. Finalization - Pending
-
-Bugs - 
-- Aggregation all Names and 8th point 
+6. Finalization - Done
