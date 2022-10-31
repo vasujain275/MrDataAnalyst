@@ -38,7 +38,7 @@ while opn=='y':
         elif visn==2:
             plots.MultiLine(df)
         elif visn==3:
-            pass
+            plots.MultiView(df)
         elif visn==4:
             plots.Bar(df)
         elif visn==5:

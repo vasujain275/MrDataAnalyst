@@ -15,6 +15,4 @@ Functions to Code :
 6. Finalization - Pending
 
 Bugs - 
-- Multiple Line Plot Names Not Showing
-- Multiple View Plot Not Done
-
+- Aggregation all Names and 8th point 
