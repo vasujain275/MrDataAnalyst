@@ -16,3 +16,4 @@ Functions to Code :
 
 Bugs - 
 - Aggregation all Names and 8th point 
+- sum (3)Name
