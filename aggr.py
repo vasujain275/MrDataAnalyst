@@ -56,7 +56,7 @@ def asum(df):
         print(df.sum(axis=1,numeric_only=numn))
     elif coln==3:
         coln = input("Enter the Exact Name of Column you want to use: ")
-        print(df[coln].sum(numeric_only=numn))
+        print(df[coln].sum())
     else:
         print("Choose Between 1/2/3")
 

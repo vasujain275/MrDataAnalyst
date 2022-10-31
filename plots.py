@@ -94,11 +94,3 @@ def MultiView(df):
 
     plt.show()
 
-# d = {"Name":['Vasu','Jatin','Rachit','Daksh'],
-#      'IP':[100,90,45,50],
-#      'Maths':[84,85,80,34],
-#      'Chemistry':[90,99,89,69],
-#      'Phy':[99,97,87,78]
-#     }
-# df = pd.DataFrame(d)
-# MultiView(df)

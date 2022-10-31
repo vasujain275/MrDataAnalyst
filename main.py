@@ -11,7 +11,10 @@ if cny==1:
     df = base.CSV(d)
 elif cny==2:
     ncsv = input("Enter the Name of CSV File(eg - data.csv): ")
-    df = pd.read_csv(ncsv)
+    df = pd.read_csv(ncsv,index_col=0)
+    print("-------------------------------")
+    print(f'Here is your Data Frame\n{df}')
+    print("-------------------------------")
 
 opn ="y"
 while opn=='y':
@@ -27,7 +30,7 @@ while opn=='y':
         1. Single Line Plot
         2. Multiple Line Plot
         3. Multiple View Line Plot
-        4. Bar Plot
+        4. Bar Plot 
         5. Histogram
         6. Back to Previous Menu / Exit
         ''')
@@ -38,7 +41,7 @@ while opn=='y':
         elif visn==2:
             plots.MultiLine(df)
         elif visn==3:
-            plots.MultiView(df)
+            pass
         elif visn==4:
             plots.Bar(df)
         elif visn==5:

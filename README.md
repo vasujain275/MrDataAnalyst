@@ -12,4 +12,4 @@
 5. Data Aggregation - Done
 6. Data Sorting - Done
 7. Data Visulisation - Done
-8. Finalization - Pending
+8. Finalization - Done
