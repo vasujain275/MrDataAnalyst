@@ -58,5 +58,5 @@ def CSV(d):
 
 def EndCredits():
     print("\nThank you for using Data Anaylist Tool\n")
-    print("Made by - \nJatin Gupta (XII D)\nVasu Jain (XII B)")
+    print("Made by - Vasu Jain (XII B)\nJatin Gupta (XII D)\nRachit Garg (XII B)")
     time.sleep(15)
