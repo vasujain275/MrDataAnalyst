@@ -51,9 +51,9 @@ def asum(df):
     else:
         print('Please choice the correct option')
     if coln==1:
-        print(df.sum(axis=0,numeric_only=numn))
+        print(df.sum(axis=0,numeric_only=numo))
     elif coln==2:
-        print(df.sum(axis=1,numeric_only=numn))
+        print(df.sum(axis=1,numeric_only=numo))
     elif coln==3:
         coln = input("Enter the Exact Name of Column you want to use: ")
         print(df[coln].sum())
